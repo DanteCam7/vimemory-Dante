@@ -1,37 +1,49 @@
 :root {
-	--canvas: #FBFAF6;
-	--surface: #FFFFFF;
-	--surface-tint: #F5EFE6;
+	--canvas: #F5EFE6;
+	--surface: #FBFAF6;
 	--line: #E3DCD0;
 	--line-strong: #CFC6B7;
 
-	--text: #1A1A1A;
+	--ink: #1A1A1A;
 	--text-muted: #5C5C5C;
-	--on-ink: #FBFAF6;
+	--on-room: #F5EFE6;
+	--on-room-muted: #B9B2A7;
 
+	--blue: #9BBEC8;
+	--blue-tint: #D6E6EA;
+	--blue-wash: #E6EFF1;
 	--sage: #7DA99A;
+	--sage-tint: #DCE9E3;
+	--sage-deep: #2F5A4E;
 	--sage-text: #3F6E5F;
-	--dusty-blue: #9BBEC8;
-	--accent-brand: #E8391C;
-	--accent-dark: #CB3910;
-	--accent-text: #B8340E;
+	--red: #E8391C;
+	--red-text: #A82D0C;
 	--star: #A35F00;
 
+	--font-display: 'EB Garamond', 'Times New Roman', serif;
 	--font-body: 'Poppins', system-ui, sans-serif;
-	--font-display: 'Instrument Serif', 'Times New Roman', serif;
-	--font-title: 'Inter', system-ui, sans-serif;
-	--font-mono: 'JetBrains Mono', ui-monospace, monospace;
 
-	--radius-card: 16px;
-	--radius-control: 6px;
+	--border: 2px solid var(--ink);
+	--radius-btn: 12px;
+	--radius-card: 32px;
+	--radius-device: 40px;
+	--radius-room: 64px;
+	--radius-pill: 9999px;
 
 	--container: 1200px;
 	--gutter: 1.5rem;
 	--section-gap: 6rem;
+	--room-pad: 4.375rem;
 
 	--ease-hover: 150ms ease-out;
+	--ease-drop: cubic-bezier(0.55, 0, 0.9, 0.45);
+	--ervi-dir: 1;
+}
+
+@media (max-width: 900px) {
+	:root { --radius-room: 48px; --room-pad: 3.5rem; }
 }
 
 @media (max-width: 640px) {
-	:root { --gutter: 1rem; --section-gap: 4rem; }
+	:root { --gutter: 1rem; --section-gap: 4rem; --radius-room: 32px; --room-pad: 2rem; --radius-device: 32px; }
 }

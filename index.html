@@ -9,7 +9,7 @@
 	<link rel="icon" type="image/png" href="assets/logo.png">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="styles/tokens.css">
 	<link rel="stylesheet" href="styles/base.css">
 	<link rel="stylesheet" href="styles/layout.css">
@@ -18,38 +18,40 @@
 </head>
 <body>
 	<nav class="navbar" id="navbar">
-		<div class="container navbar__inner">
-			<a href="#inicio" class="brand">
-				<img src="assets/logo.png" alt="" class="brand__mark">
-				<span class="brand__text">
-					<span class="brand__name">Vimemory</span>
-					<span class="brand__tag">Mind Palace</span>
-				</span>
-			</a>
-			<ul class="navbar__links">
-				<li><a href="#inicio">Inicio</a></li>
-				<li><a href="#temas">Temas</a></li>
-				<li><a href="#recursos">Recursos</a></li>
-				<li><a href="#planes">Planes</a></li>
-				<li><a href="#nosotros">Nosotros</a></li>
-				<li><a href="#contacto">Contacto</a></li>
-			</ul>
-			<a href="#" class="btn btn--ghost navbar__cta" data-app-link="/auth/login">Iniciar Sesión</a>
-			<button class="navbar__hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false"
-				aria-controls="drawer">
-				<span></span><span></span><span></span>
-			</button>
-		</div>
-		<div class="navbar__drawer" id="drawer" hidden>
-			<ul>
-				<li><a href="#inicio">Inicio</a></li>
-				<li><a href="#temas">Temas</a></li>
-				<li><a href="#recursos">Recursos</a></li>
-				<li><a href="#planes">Planes</a></li>
-				<li><a href="#nosotros">Nosotros</a></li>
-				<li><a href="#contacto">Contacto</a></li>
-				<li><a href="#" class="btn btn--ghost" data-app-link="/auth/login">Iniciar Sesión</a></li>
-			</ul>
+		<div class="container">
+			<div class="navbar__inner">
+				<a href="#inicio" class="brand">
+					<img src="assets/logo.png" alt="" class="brand__mark">
+					<span class="brand__text">
+						<span class="brand__name">Vimemory</span>
+						<span class="brand__tag">Mind Palace</span>
+					</span>
+				</a>
+				<ul class="navbar__links">
+					<li><a href="#inicio">Inicio</a></li>
+					<li><a href="#temas">Temas</a></li>
+					<li><a href="#recursos">Recursos</a></li>
+					<li><a href="#planes">Planes</a></li>
+					<li><a href="#nosotros">Nosotros</a></li>
+					<li><a href="#contacto">Contacto</a></li>
+				</ul>
+				<a href="#" class="btn btn--primary navbar__cta" data-app-link="/auth/login">Iniciar Sesión</a>
+				<button class="navbar__hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false"
+					aria-controls="drawer">
+					<span></span><span></span><span></span>
+				</button>
+			</div>
+			<div class="navbar__drawer" id="drawer" hidden>
+				<ul>
+					<li><a href="#inicio">Inicio</a></li>
+					<li><a href="#temas">Temas</a></li>
+					<li><a href="#recursos">Recursos</a></li>
+					<li><a href="#planes">Planes</a></li>
+					<li><a href="#nosotros">Nosotros</a></li>
+					<li><a href="#contacto">Contacto</a></li>
+					<li><a href="#" class="btn btn--primary" data-app-link="/auth/login">Iniciar Sesión</a></li>
+				</ul>
+			</div>
 		</div>
 	</nav>
 
@@ -58,18 +60,18 @@
 			<div class="container">
 				<div class="hero__content reveal">
 					<a href="#como-funciona" class="pill">
-						<span class="pill__tag">ENARM</span>
+						<span class="badge badge--status">ENARM</span>
 						<span>Bienvenido a Vimemory</span>
-						<svg class="chev" viewBox="0 0 16 16" width="12" height="12" aria-hidden="true" focusable="false"><path d="M6 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+						<svg class="chev" viewBox="0 0 16 16" width="12" height="12" aria-hidden="true" focusable="false"><path d="M6 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
 					</a>
-					<h1 class="hero__heading">Estudia medicina<br>con memoria,<br>entiende <em>para siempre.</em></h1>
+					<h1 class="hero__heading">Estudia medicina<br>con memoria,<br>entiende <span class="scribble hero__accent">para siempre<svg class="squiggle" viewBox="0 0 200 16" aria-hidden="true" focusable="false"><path pathLength="1" d="M3 10.5C22 4 38 13.5 58 8.5S96 3.5 118 9s42 5 60-1.5 16-1.5 19 .5"/></svg></span>.</h1>
 					<p class="hero__sub">
 						Resúmenes visuales, mnemotecnias y preguntas<br>
 						para que apruebes y seas el médico que sueñas.
 					</p>
 					<div class="hero__ctas">
-						<a href="#temas" class="btn btn--solid">Explorar Temas</a>
-						<a href="#como-funciona" class="btn btn--ghost">
+						<a href="#temas" class="btn btn--primary">Explorar Temas</a>
+						<a href="#como-funciona" class="btn btn--secondary">
 							<svg viewBox="0 0 16 16" width="10" height="10" aria-hidden="true" focusable="false">
 								<path d="M3 2l11 6-11 6z" fill="currentColor"/>
 							</svg>
@@ -78,163 +80,201 @@
 					</div>
 				</div>
 
-				<div class="hero__stage reveal">
-					<img src="assets/crowny.png" width="1200" height="1125" alt="" aria-hidden="true" class="ervi hero__ervi">
-					<div class="window hero__window" role="img"
+				<div class="hero__stage">
+					<div class="hero__mascot" aria-hidden="true">
+						<span class="hero__arc">
+							<svg class="arc" viewBox="0 0 200 200" focusable="false">
+								<defs><path id="arc-path" d="M100 100m-84 0a84 84 0 1 1 168 0a84 84 0 1 1-168 0"/></defs>
+								<text><textPath href="#arc-path" textLength="526" lengthAdjust="spacing">Vimemory · Mind Palace · ENARM · Vimemory · Mind Palace · ENARM ·</textPath></text>
+							</svg>
+						</span>
+						<span class="ervi-wrap ervi-wrap--land">
+							<img src="assets/crowny.png" width="1200" height="1125" alt="" class="ervi">
+						</span>
+					</div>
+					<div class="device device--tablet" role="img"
 						aria-label="Vista previa de la biblioteca de Vimemory: estante de libros de cardiología">
-						<div class="window__bar">
-							<span class="window__dots"><span></span><span></span><span></span></span>
-							<span class="window__path">vimemory / biblioteca / <b>cardiología</b></span>
-						</div>
-						<div class="library">
-							<div class="library__side">
-								<p class="mono-label">Temas</p>
-								<ul class="library__topics">
-									<li class="is-active"><span class="dot dot--red"></span>Cardiología</li>
-									<li><span class="dot dot--blue"></span>Neurología</li>
-									<li><span class="dot dot--blue"></span>Neumología</li>
-									<li><span class="dot dot--sage"></span>Gastroenterología</li>
-									<li><span class="dot dot--sage"></span>Farmacología</li>
-								</ul>
+						<div class="device__screen">
+							<div class="device__bar">
+								<span class="device__path">vimemory / biblioteca / <b>cardiología</b></span>
 							</div>
-							<div class="library__main">
-								<div class="library__head">
-									<span class="library__title">Cardiología</span>
-									<span class="mono-label">estante 01</span>
+							<div class="library">
+								<div class="library__side">
+									<p class="label-sm">Temas</p>
+									<ul class="library__topics">
+										<li class="is-active"><span class="dot dot--red"></span>Cardiología</li>
+										<li><span class="dot dot--blue"></span>Neurología</li>
+										<li><span class="dot dot--blue"></span>Neumología</li>
+										<li><span class="dot dot--sage"></span>Gastroenterología</li>
+										<li><span class="dot dot--sage"></span>Farmacología</li>
+									</ul>
 								</div>
-								<div class="library__stage">
-									<div class="shelf">
-										<span class="book book--red book--h1"><span class="book__title">Arritmias</span><span class="book__no">01</span></span>
-										<span class="book book--sage book--h2"><span class="book__title">Insuficiencia cardiaca</span><span class="book__no">02</span></span>
-										<span class="book book--blue book--h3"><span class="book__title">Cardiopatía isquémica</span><span class="book__no">03</span></span>
-										<span class="book book--sage book--h4"><span class="book__title">Hipertensión</span><span class="book__no">04</span></span>
-										<span class="book book--blue book--h2 book--extra"><span class="book__title">Valvulopatías</span><span class="book__no">05</span></span>
-										<span class="book book--red book--h3 book--extra"><span class="book__title">Endocarditis</span><span class="book__no">06</span></span>
+								<div class="library__main">
+									<div class="library__head">
+										<span class="library__title">Cardiología</span>
+										<span class="label-sm">estante 01</span>
 									</div>
-									<div class="reader">
-										<div class="reader__head">
-											<span class="dot dot--red"></span>
-											<span class="mono-label">abierto · arritmias</span>
+									<div class="library__stage">
+										<div class="shelf">
+											<span class="book book--red book--h1"><span class="book__title">Arritmias</span><span class="book__no">01</span></span>
+											<span class="book book--sage book--h2"><span class="book__title">Insuficiencia cardiaca</span><span class="book__no">02</span></span>
+											<span class="book book--blue book--h3"><span class="book__title">Cardiopatía isquémica</span><span class="book__no">03</span></span>
+											<span class="book book--sage book--h4"><span class="book__title">Hipertensión</span><span class="book__no">04</span></span>
+											<span class="book book--blue book--h2 book--extra"><span class="book__title">Valvulopatías</span><span class="book__no">05</span></span>
+											<span class="book book--red book--h3 book--extra"><span class="book__title">Endocarditis</span><span class="book__no">06</span></span>
 										</div>
-										<span class="reader__video"><span class="player__play"></span></span>
-										<span class="reader__title">Fibrilación auricular</span>
-										<span class="reader__chips">
-											<span class="tag"><span class="dot dot--blue"></span>video</span>
-											<span class="tag"><span class="dot dot--sage"></span>imágenes</span>
-											<span class="tag"><span class="dot dot--muted"></span>texto</span>
-										</span>
+										<div class="reader">
+											<div class="reader__head">
+												<span class="dot dot--red"></span>
+												<span class="label-sm">abierto · arritmias</span>
+											</div>
+											<span class="reader__video"><span class="player__play"></span></span>
+											<span class="reader__title">Fibrilación auricular</span>
+											<span class="reader__chips">
+												<span class="tag"><span class="dot dot--blue"></span>video</span>
+												<span class="tag"><span class="dot dot--sage"></span>imágenes</span>
+												<span class="tag"><span class="dot dot--muted"></span>texto</span>
+											</span>
+										</div>
 									</div>
-								</div>
-								<div class="library__resume">
-									<span class="dot dot--sage"></span>
-									<span class="mono-label">continuar</span>
-									<span class="library__book">Arritmias</span>
-									<span class="mono-label library__page">Página 3 de 12</span>
-									<span class="meter"><span class="meter__fill"></span></span>
-									<span class="library__open">Abrir →</span>
+									<div class="library__resume">
+										<span class="dot dot--sage"></span>
+										<span class="label-sm">continuar</span>
+										<span class="library__book">Arritmias</span>
+										<span class="label-sm library__page">Página 3 de 12</span>
+										<span class="meter"><span class="meter__fill"></span></span>
+										<span class="library__open">Abrir →</span>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
+					<span class="ecg-pill hero__ecg" aria-hidden="true">
+						<svg class="ecg" viewBox="0 0 120 32" focusable="false">
+							<path class="ecg__base" pathLength="100" d="M0 18h28l5-5 5 5h8l4-14 5 26 4-12h11l4-4 4 4h42"/>
+							<path class="ecg__pulse" pathLength="100" d="M0 18h28l5-5 5 5h8l4-14 5 26 4-12h11l4-4 4 4h42"/>
+						</svg>
+						<span>estudiando…</span>
+					</span>
 				</div>
 			</div>
 		</section>
 
 		<section class="section walkthrough" id="como-funciona">
 			<div class="container">
-				<div class="section-head walkthrough__head reveal">
-					<div>
-						<p class="section-label">Cómo funciona</p>
-						<h2 class="section-title">De un tema a tu memoria, página a página.</h2>
-					</div>
-					<img src="assets/crowny.png" width="1200" height="1125" alt="" aria-hidden="true" loading="lazy" class="ervi walkthrough__ervi">
+				<div class="section-head section-head--center walkthrough__head reveal">
+					<span class="ervi-wrap ervi-wrap--walk walkthrough__ervi">
+						<img src="assets/crowny.png" width="1200" height="1125" alt="" aria-hidden="true" loading="lazy" class="ervi">
+					</span>
+					<p class="section-label">Cómo funciona</p>
+					<h2 class="section-title">De un tema a tu <span class="scribble">memoria<svg class="squiggle" viewBox="0 0 200 16" aria-hidden="true" focusable="false"><path pathLength="1" d="M3 10.5C22 4 38 13.5 58 8.5S96 3.5 118 9s42 5 60-1.5 16-1.5 19 .5"/></svg></span>, página a página.</h2>
 				</div>
 
 				<ol class="steps">
 					<li class="step reveal">
-						<p class="step__no">01 — Elige tema</p>
-						<h3 class="step__title">Elige una especialidad</h3>
-						<p class="step__desc">Cada tema del ENARM es un estante de tu biblioteca.</p>
-						<div class="window window--mini" role="img" aria-label="Vista previa: selector de temas">
-							<div class="window__bar">
-								<span class="window__dots"><span></span><span></span><span></span></span>
-								<span class="window__path">biblioteca / <b>temas</b></span>
-							</div>
-							<div class="mini mini--topics">
-								<span class="search"><span class="mono-label">buscar tema…</span><span class="search__key mono-label">/</span></span>
-								<span class="tile is-active"><img src="assets/illus/corazon.svg" alt="" aria-hidden="true">Cardiología<span class="dot dot--red"></span></span>
-								<span class="tile"><img src="assets/illus/cerebro.svg" alt="" aria-hidden="true">Neurología</span>
-								<span class="tile"><img src="assets/illus/pulmones.svg" alt="" aria-hidden="true">Neumología</span>
-								<span class="tile"><img src="assets/illus/estomago.svg" alt="" aria-hidden="true">Gastro</span>
-								<span class="picker__foot"><span class="mono-label">seleccionado · cardiología</span><span class="library__open">Abrir estante →</span></span>
+						<div class="step__text">
+							<p class="badge step__no">01 — Elige tema</p>
+							<h3 class="step__title">Elige una especialidad</h3>
+							<p class="step__desc">Cada tema del ENARM es un estante de tu biblioteca.</p>
+						</div>
+						<div class="step__stage">
+							<div class="device device--phone" role="img" aria-label="Vista previa: selector de temas">
+								<div class="device__screen">
+									<div class="device__bar">
+										<span class="device__path">biblioteca / <b>temas</b></span>
+									</div>
+									<div class="mini mini--topics">
+										<span class="search"><span class="label-sm">buscar tema…</span><span class="search__key label-sm">/</span></span>
+										<span class="tile is-active"><img src="assets/illus/corazon.svg" alt="" aria-hidden="true">Cardiología<span class="dot dot--red"></span></span>
+										<span class="tile"><img src="assets/illus/cerebro.svg" alt="" aria-hidden="true">Neurología</span>
+										<span class="tile"><img src="assets/illus/pulmones.svg" alt="" aria-hidden="true">Neumología</span>
+										<span class="tile"><img src="assets/illus/estomago.svg" alt="" aria-hidden="true">Gastro</span>
+										<span class="picker__foot"><span class="label-sm">seleccionado · cardiología</span><span class="library__open">Abrir estante →</span></span>
+									</div>
+								</div>
 							</div>
 						</div>
 					</li>
 					<li class="step reveal">
-						<p class="step__no">02 — Abre el libro</p>
-						<h3 class="step__title">Explora libros animados</h3>
-						<p class="step__desc">Cada libro reúne un tema completo, ordenado por páginas.</p>
-						<div class="window window--mini" role="img" aria-label="Vista previa: índice de un libro">
-							<div class="window__bar">
-								<span class="window__dots"><span></span><span></span><span></span></span>
-								<span class="window__path">cardiología / <b>arritmias</b></span>
-							</div>
-							<div class="mini mini--book">
-								<span class="cover"><span class="cover__band"></span><span class="cover__title">Arritmias</span><span class="mono-label">12 páginas</span></span>
-								<span class="toc">
-									<span class="toc__row"><span class="dot dot--sage"></span><span class="mono-label">01</span>Conducción normal</span>
-									<span class="toc__row"><span class="dot dot--sage"></span><span class="mono-label">02</span>Bradiarritmias</span>
-									<span class="toc__row is-active"><span class="dot dot--red"></span><span class="mono-label">03</span>Fibrilación auricular</span>
-									<span class="toc__row"><span class="dot dot--muted"></span><span class="mono-label">04</span>Flutter auricular</span>
-								</span>
+						<div class="step__text">
+							<p class="badge step__no">02 — Abre el libro</p>
+							<h3 class="step__title">Explora libros animados</h3>
+							<p class="step__desc">Cada libro reúne un tema completo, ordenado por páginas.</p>
+						</div>
+						<div class="step__stage step__stage--sage">
+							<div class="device device--phone" role="img" aria-label="Vista previa: índice de un libro">
+								<div class="device__screen">
+									<div class="device__bar">
+										<span class="device__path">cardiología / <b>arritmias</b></span>
+									</div>
+									<div class="mini mini--book">
+										<span class="cover"><span class="cover__band"></span><span class="cover__title">Arritmias</span><span class="label-sm">12 páginas</span></span>
+										<span class="toc">
+											<span class="toc__row"><span class="dot dot--sage"></span><span class="label-sm">01</span>Conducción normal</span>
+											<span class="toc__row"><span class="dot dot--sage"></span><span class="label-sm">02</span>Bradiarritmias</span>
+											<span class="toc__row is-active"><span class="dot dot--red"></span><span class="label-sm">03</span>Fibrilación auricular</span>
+											<span class="toc__row"><span class="dot dot--muted"></span><span class="label-sm">04</span>Flutter auricular</span>
+										</span>
+									</div>
+								</div>
 							</div>
 						</div>
 					</li>
 					<li class="step reveal">
-						<p class="step__no">03 — Estudia</p>
-						<h3 class="step__title">Página a página</h3>
-						<p class="step__desc">Video, imágenes y texto mínimo en cada página. Menos texto, más imagen.</p>
-						<div class="window window--mini" role="img" aria-label="Vista previa: una página con video, imágenes y texto">
-							<div class="window__bar">
-								<span class="window__dots"><span></span><span></span><span></span></span>
-								<span class="window__path">arritmias / <b>página 3</b></span>
-							</div>
-							<div class="mini mini--page">
-								<span class="player">
-									<span class="player__play"></span>
-									<span class="mono-label player__label">video</span>
-								</span>
-								<span class="figures">
-									<span class="figure">
-										<svg viewBox="0 0 120 40" aria-hidden="true" focusable="false"><path d="M0 22h18l4-6 4 6h8l3-16 5 30 4-14h12l5-6 5 6h12l3-16 5 30 4-14h24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
-										<span class="mono-label">imagen · ECG</span>
-									</span>
-									<span class="figure">
-										<img src="assets/illus/corazon.svg" alt="" aria-hidden="true">
-										<span class="mono-label">imagen · aurículas</span>
-									</span>
-								</span>
-								<span class="page-text">Ritmo irregularmente irregular, sin ondas P.</span>
-								<span class="pager"><span>←</span><span class="mono-label">Página 3 de 12</span><span>→</span></span>
+						<div class="step__text">
+							<p class="badge step__no">03 — Estudia</p>
+							<h3 class="step__title">Página a página</h3>
+							<p class="step__desc">Video, imágenes y texto mínimo en cada página. Menos texto, más imagen.</p>
+						</div>
+						<div class="step__stage">
+							<div class="device device--phone" role="img" aria-label="Vista previa: una página con video, imágenes y texto">
+								<div class="device__screen">
+									<div class="device__bar">
+										<span class="device__path">arritmias / <b>página 3</b></span>
+									</div>
+									<div class="mini mini--page">
+										<span class="player">
+											<span class="player__play"></span>
+											<span class="label-sm player__label">video</span>
+										</span>
+										<span class="figures">
+											<span class="figure">
+												<svg viewBox="0 0 120 40" aria-hidden="true" focusable="false"><path d="M0 22h18l4-6 4 6h8l3-16 5 30 4-14h12l5-6 5 6h12l3-16 5 30 4-14h24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+												<span class="label-sm">imagen · ECG</span>
+											</span>
+											<span class="figure">
+												<img src="assets/illus/corazon.svg" alt="" aria-hidden="true">
+												<span class="label-sm">imagen · aurículas</span>
+											</span>
+										</span>
+										<span class="page-text">Ritmo irregularmente irregular, sin ondas P.</span>
+										<span class="pager"><span>←</span><span class="label-sm">Página 3 de 12</span><span>→</span></span>
+									</div>
+								</div>
 							</div>
 						</div>
 					</li>
 					<li class="step reveal">
-						<p class="step__no">04 — Repasa</p>
-						<h3 class="step__title">Recuerda y mide tu progreso</h3>
-						<p class="step__desc">Técnicas de memoria que sí funcionan. Practica y mide tu progreso.</p>
-						<div class="window window--mini" role="img" aria-label="Vista previa: mnemotecnia, pregunta de práctica y racha de estudio">
-							<div class="window__bar">
-								<span class="window__dots"><span></span><span></span><span></span></span>
-								<span class="window__path">arritmias / <b>repaso</b></span>
-							</div>
-							<div class="mini mini--quiz">
-								<span class="tag"><span class="dot dot--red"></span>mnemotecnia · pregunta</span>
-								<span class="quiz__q">¿Primera línea para controlar la frecuencia en FA estable?</span>
-								<span class="option is-correct"><span class="mono-label">A</span>Betabloqueador<span class="option__mark">✓</span></span>
-								<span class="option"><span class="mono-label">B</span>Adenosina</span>
-								<span class="option"><span class="mono-label">C</span>Atropina</span>
-								<span class="streak"><span class="mono-label">racha de estudio</span><span class="streak__days"><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span></span><span></span><span></span></span></span>
+						<div class="step__text">
+							<p class="badge step__no">04 — Repasa</p>
+							<h3 class="step__title">Recuerda y mide tu progreso</h3>
+							<p class="step__desc">Técnicas de memoria que sí funcionan. Practica y mide tu progreso.</p>
+						</div>
+						<div class="step__stage step__stage--sage">
+							<div class="device device--phone" role="img" aria-label="Vista previa: mnemotecnia, pregunta de práctica y racha de estudio">
+								<div class="device__screen">
+									<div class="device__bar">
+										<span class="device__path">arritmias / <b>repaso</b></span>
+									</div>
+									<div class="mini mini--quiz">
+										<span class="tag"><span class="dot dot--red"></span>mnemotecnia · pregunta</span>
+										<span class="quiz__q">¿Primera línea para controlar la frecuencia en FA estable?</span>
+										<span class="option is-correct"><span class="label-sm">A</span>Betabloqueador<span class="option__mark">✓</span></span>
+										<span class="option"><span class="label-sm">B</span>Adenosina</span>
+										<span class="option"><span class="label-sm">C</span>Atropina</span>
+										<span class="streak"><span class="label-sm">racha de estudio</span><span class="streak__days"><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span></span><span></span><span></span></span></span>
+									</div>
+								</div>
 							</div>
 						</div>
 					</li>
@@ -265,56 +305,79 @@
 			</div>
 		</section>
 
-		<section class="section topics" id="temas">
+		<section class="section section--room" id="temas">
 			<div class="container">
-				<div class="topics__head reveal">
-					<div>
-						<p class="section-label">Biblioteca</p>
-						<h2 class="section-title">Temas Populares</h2>
+				<div class="room topics">
+					<div class="topics__head reveal">
+						<div>
+							<p class="section-label">Biblioteca</p>
+							<h2 class="section-title">Temas Populares</h2>
+						</div>
+						<a href="#" class="link" data-app-link="/temas">Ver todos los temas <span aria-hidden="true">→</span></a>
 					</div>
-					<a href="#" class="link" data-app-link="/temas">Ver todos los temas <span aria-hidden="true">→</span></a>
-				</div>
-				<div class="window reveal">
-					<div class="window__bar">
-						<span class="window__dots" aria-hidden="true"><span></span><span></span><span></span></span>
-						<span class="window__path">vimemory / índice / <b>temas</b></span>
-					</div>
-					<div class="index">
-						<article class="index__row">
-							<span class="icon-box"><img src="assets/illus/corazon.svg" alt="" aria-hidden="true"></span>
-							<h3 class="index__name">Cardiología</h3>
-							<span class="index__tag mono-label">/cardiologia</span>
-							<p class="index__meta"><span class="dot dot--blue"></span>Contenido en construcción</p>
-							<span class="index__arrow" aria-hidden="true">→</span>
-						</article>
-						<article class="index__row">
-							<span class="icon-box"><img src="assets/illus/cerebro.svg" alt="" aria-hidden="true"></span>
-							<h3 class="index__name">Neurología</h3>
-							<span class="index__tag mono-label">/neurologia</span>
-							<p class="index__meta"><span class="dot dot--blue"></span>Contenido en construcción</p>
-							<span class="index__arrow" aria-hidden="true">→</span>
-						</article>
-						<article class="index__row">
-							<span class="icon-box"><img src="assets/illus/pulmones.svg" alt="" aria-hidden="true"></span>
-							<h3 class="index__name">Neumología</h3>
-							<span class="index__tag mono-label">/neumologia</span>
-							<p class="index__meta"><span class="dot dot--blue"></span>Contenido en construcción</p>
-							<span class="index__arrow" aria-hidden="true">→</span>
-						</article>
-						<article class="index__row">
-							<span class="icon-box"><img src="assets/illus/estomago.svg" alt="" aria-hidden="true"></span>
-							<h3 class="index__name">Gastroenterología</h3>
-							<span class="index__tag mono-label">/gastroenterologia</span>
-							<p class="index__meta"><span class="dot dot--blue"></span>Contenido en construcción</p>
-							<span class="index__arrow" aria-hidden="true">→</span>
-						</article>
-						<article class="index__row">
-							<span class="icon-box"><img src="assets/illus/pastillas.svg" alt="" aria-hidden="true"></span>
-							<h3 class="index__name">Farmacología</h3>
-							<span class="index__tag mono-label">/farmacologia</span>
-							<p class="index__meta"><span class="dot dot--blue"></span>Contenido en construcción</p>
-							<span class="index__arrow" aria-hidden="true">→</span>
-						</article>
+					<div class="parade reveal" tabindex="0" role="region" aria-label="Temas populares">
+						<ul class="parade__track">
+							<li class="parade__item">
+								<span class="parade__icon"><img src="assets/illus/corazon.svg" alt="" aria-hidden="true"></span>
+								<h3 class="parade__name">Cardiología</h3>
+								<span class="label-sm">/cardiologia</span>
+								<span class="badge badge--status">Contenido en construcción</span>
+							</li>
+							<li class="parade__item">
+								<span class="parade__icon"><img src="assets/illus/cerebro.svg" alt="" aria-hidden="true"></span>
+								<h3 class="parade__name">Neurología</h3>
+								<span class="label-sm">/neurologia</span>
+								<span class="badge badge--status">Contenido en construcción</span>
+							</li>
+							<li class="parade__item">
+								<span class="parade__icon"><img src="assets/illus/pulmones.svg" alt="" aria-hidden="true"></span>
+								<h3 class="parade__name">Neumología</h3>
+								<span class="label-sm">/neumologia</span>
+								<span class="badge badge--status">Contenido en construcción</span>
+							</li>
+							<li class="parade__item">
+								<span class="parade__icon"><img src="assets/illus/estomago.svg" alt="" aria-hidden="true"></span>
+								<h3 class="parade__name">Gastroenterología</h3>
+								<span class="label-sm">/gastroenterologia</span>
+								<span class="badge badge--status">Contenido en construcción</span>
+							</li>
+							<li class="parade__item">
+								<span class="parade__icon"><img src="assets/illus/pastillas.svg" alt="" aria-hidden="true"></span>
+								<h3 class="parade__name">Farmacología</h3>
+								<span class="label-sm">/farmacologia</span>
+								<span class="badge badge--status">Contenido en construcción</span>
+							</li>
+							<li class="parade__item" aria-hidden="true">
+								<span class="parade__icon"><img src="assets/illus/corazon.svg" alt="" aria-hidden="true"></span>
+								<p class="parade__name">Cardiología</p>
+								<span class="label-sm">/cardiologia</span>
+								<span class="badge badge--status">Contenido en construcción</span>
+							</li>
+							<li class="parade__item" aria-hidden="true">
+								<span class="parade__icon"><img src="assets/illus/cerebro.svg" alt="" aria-hidden="true"></span>
+								<p class="parade__name">Neurología</p>
+								<span class="label-sm">/neurologia</span>
+								<span class="badge badge--status">Contenido en construcción</span>
+							</li>
+							<li class="parade__item" aria-hidden="true">
+								<span class="parade__icon"><img src="assets/illus/pulmones.svg" alt="" aria-hidden="true"></span>
+								<p class="parade__name">Neumología</p>
+								<span class="label-sm">/neumologia</span>
+								<span class="badge badge--status">Contenido en construcción</span>
+							</li>
+							<li class="parade__item" aria-hidden="true">
+								<span class="parade__icon"><img src="assets/illus/estomago.svg" alt="" aria-hidden="true"></span>
+								<p class="parade__name">Gastroenterología</p>
+								<span class="label-sm">/gastroenterologia</span>
+								<span class="badge badge--status">Contenido en construcción</span>
+							</li>
+							<li class="parade__item" aria-hidden="true">
+								<span class="parade__icon"><img src="assets/illus/pastillas.svg" alt="" aria-hidden="true"></span>
+								<p class="parade__name">Farmacología</p>
+								<span class="label-sm">/farmacologia</span>
+								<span class="badge badge--status">Contenido en construcción</span>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>
@@ -322,91 +385,80 @@
 
 		<section class="section resources" id="recursos">
 			<div class="container">
-				<div class="section-head reveal">
+				<div class="section-head section-head--center reveal">
 					<p class="section-label">Recursos</p>
-					<h2 class="section-title">Todo lo que necesitas, en un solo lugar.</h2>
+					<h2 class="section-title">Todo lo que necesitas, en un <span class="scribble">solo lugar<svg class="squiggle" viewBox="0 0 200 16" aria-hidden="true" focusable="false"><path pathLength="1" d="M3 10.5C22 4 38 13.5 58 8.5S96 3.5 118 9s42 5 60-1.5 16-1.5 19 .5"/></svg></span>.</h2>
 				</div>
 				<div class="resources__grid reveal">
-					<article class="window resource">
-						<div class="window__bar">
-							<span class="window__dots" aria-hidden="true"><span></span><span></span><span></span></span>
-							<span class="window__path">recursos / <b>guías-enarm</b></span>
-						</div>
+					<article class="card resource">
 						<div class="resource__preview" aria-hidden="true">
-							<span class="tag"><span class="dot dot--red"></span>cardiología</span>
-							<span class="tag"><span class="dot dot--blue"></span>neumología</span>
-							<span class="tag"><span class="dot dot--blue"></span>neurología</span>
-							<span class="tag"><span class="dot dot--sage"></span>farmacología</span>
+							<span class="resource__path">recursos / <b>guías-enarm</b></span>
+							<span class="resource__tags">
+								<span class="tag"><span class="dot dot--red"></span>cardiología</span>
+								<span class="tag"><span class="dot dot--blue"></span>neumología</span>
+								<span class="tag"><span class="dot dot--blue"></span>neurología</span>
+								<span class="tag"><span class="dot dot--sage"></span>farmacología</span>
+							</span>
 						</div>
-						<div class="resource__body">
-							<span class="icon-box"><img src="assets/illus/f-resumenes.svg" alt="" aria-hidden="true"></span>
-							<h3 class="resource__title">Guías ENARM</h3>
-							<p class="resource__desc">Temario oficial desglosado por especialidad, con lo esencial de cada tema.</p>
-						</div>
+						<span class="icon-box"><img src="assets/illus/f-resumenes.svg" alt="" aria-hidden="true"></span>
+						<h3 class="resource__title">Guías ENARM</h3>
+						<p class="resource__desc">Temario oficial desglosado por especialidad, con lo esencial de cada tema.</p>
 					</article>
-					<article class="window resource">
-						<div class="window__bar">
-							<span class="window__dots" aria-hidden="true"><span></span><span></span><span></span></span>
-							<span class="window__path">recursos / <b>flashcards</b></span>
+					<article class="card resource">
+						<div class="resource__preview" aria-hidden="true">
+							<span class="resource__path">recursos / <b>flashcards</b></span>
+							<span class="flash"><span class="label-sm">frente</span>Signo de Levine</span>
+							<span class="flash"><span class="label-sm">reverso</span>Puño sobre el pecho: dolor isquémico</span>
 						</div>
-						<div class="resource__preview resource__preview--cards" aria-hidden="true">
-							<span class="flash"><span class="mono-label">frente</span>Signo de Levine</span>
-							<span class="flash"><span class="mono-label">reverso</span>Puño sobre el pecho: dolor isquémico</span>
-						</div>
-						<div class="resource__body">
-							<span class="icon-box"><img src="assets/illus/f-mnemotecnias.svg" alt="" aria-hidden="true"></span>
-							<h3 class="resource__title">Flashcards</h3>
-							<p class="resource__desc">Repaso espaciado para fijar lo que ya estudiaste.</p>
-						</div>
+						<span class="icon-box"><img src="assets/illus/f-mnemotecnias.svg" alt="" aria-hidden="true"></span>
+						<h3 class="resource__title">Flashcards</h3>
+						<p class="resource__desc">Repaso espaciado para fijar lo que ya estudiaste.</p>
 					</article>
-					<article class="window resource">
-						<div class="window__bar">
-							<span class="window__dots" aria-hidden="true"><span></span><span></span><span></span></span>
-							<span class="window__path">recursos / <b>casos-clínicos</b></span>
-						</div>
-						<div class="resource__preview resource__preview--case" aria-hidden="true">
-							<span class="case__head"><span class="dot dot--red"></span><span class="mono-label">caso · urgencias</span></span>
+					<article class="card resource">
+						<div class="resource__preview" aria-hidden="true">
+							<span class="resource__path">recursos / <b>casos-clínicos</b></span>
+							<span class="case__head"><span class="dot dot--red"></span><span class="label-sm">caso · urgencias</span></span>
 							<span class="case__line">Masculino, dolor torácico opresivo, diaforesis.</span>
-							<span class="mono-label">¿siguiente paso?</span>
+							<span class="label-sm">¿siguiente paso?</span>
 						</div>
-						<div class="resource__body">
-							<span class="icon-box"><img src="assets/illus/f-preguntas.svg" alt="" aria-hidden="true"></span>
-							<h3 class="resource__title">Casos clínicos</h3>
-							<p class="resource__desc">Escenarios reales para aplicar el conocimiento bajo presión.</p>
-						</div>
+						<span class="icon-box"><img src="assets/illus/f-preguntas.svg" alt="" aria-hidden="true"></span>
+						<h3 class="resource__title">Casos clínicos</h3>
+						<p class="resource__desc">Escenarios reales para aplicar el conocimiento bajo presión.</p>
 					</article>
 				</div>
 			</div>
 		</section>
 
-		<section class="section plans" id="planes">
+		<section class="section section--room" id="planes">
 			<div class="container">
-				<div class="section-head section-head--center reveal">
-					<p class="section-label">Planes</p>
-					<h2 class="section-title">Empieza gratis. Escala cuando estés listo.</h2>
-				</div>
-				<div class="plans__grid reveal">
-					<article class="plan-card card">
-						<h3 class="plan-card__name"><span class="dot dot--sage"></span>Free</h3>
-						<p class="plan-card__price">Gratis</p>
-						<ul class="plan-card__features">
-							<li>Acceso a especialidades básicas</li>
-							<li>Un libro por especialidad</li>
-							<li>Modo estudio estándar</li>
-						</ul>
-						<a href="#" class="btn btn--ghost" data-app-link="/auth/register">Crear cuenta</a>
-					</article>
-					<article class="plan-card card plan-card--featured">
-						<h3 class="plan-card__name"><span class="dot dot--red"></span>Pro</h3>
-						<p class="plan-card__price">Próximamente</p>
-						<ul class="plan-card__features">
-							<li>Todas las especialidades</li>
-							<li>Biblioteca completa sin límites</li>
-							<li>Video e imágenes HD por página</li>
-							<li>Actualizaciones prioritarias</li>
-						</ul>
-						<button class="btn btn--ghost" type="button" disabled>Disponible pronto</button>
-					</article>
+				<div class="room plans">
+					<div class="section-head section-head--center reveal">
+						<p class="section-label">Planes</p>
+						<h2 class="section-title">Empieza gratis. Escala cuando estés listo.</h2>
+					</div>
+					<div class="plans__grid reveal">
+						<article class="plan-card card">
+							<h3 class="badge plan-card__name"><span class="dot dot--sage"></span>Free</h3>
+							<p class="plan-card__price">Gratis</p>
+							<ul class="plan-card__features">
+								<li>Acceso a especialidades básicas</li>
+								<li>Un libro por especialidad</li>
+								<li>Modo estudio estándar</li>
+							</ul>
+							<a href="#" class="btn btn--secondary" data-app-link="/auth/register">Crear cuenta</a>
+						</article>
+						<article class="plan-card card plan-card--featured">
+							<h3 class="badge plan-card__name"><span class="dot dot--red"></span>Pro</h3>
+							<p class="plan-card__price">Próximamente</p>
+							<ul class="plan-card__features">
+								<li>Todas las especialidades</li>
+								<li>Biblioteca completa sin límites</li>
+								<li>Video e imágenes HD por página</li>
+								<li>Actualizaciones prioritarias</li>
+							</ul>
+							<button class="btn btn--secondary" type="button" disabled>Disponible pronto</button>
+						</article>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -414,9 +466,11 @@
 		<section class="section about" id="nosotros">
 			<div class="container about__inner reveal">
 				<figure class="about__figure">
-					<img src="assets/crowny.png" width="1200" height="1125" loading="lazy" class="ervi ervi--flip about__ervi"
-						alt="Ervi, la mascota de Vimemory: un cuervo leyendo un libro de medicina">
-					<figcaption class="about__caption mono-label"><span class="dot dot--sage"></span>Ervi · Mind Palace</figcaption>
+					<span class="ervi-wrap ervi-wrap--walk ervi-wrap--from-left">
+						<img src="assets/crowny.png" width="1200" height="1125" loading="lazy" class="ervi ervi--flip"
+							alt="Ervi, la mascota de Vimemory: un cuervo leyendo un libro de medicina">
+					</span>
+					<figcaption class="badge about__caption"><span class="dot dot--sage"></span>Ervi · Mind Palace</figcaption>
 				</figure>
 				<div>
 					<p class="section-label">Nosotros</p>
@@ -427,9 +481,9 @@
 						la memoria sí retiene.
 					</p>
 					<ul class="about__values">
-						<li><span class="mono-label">01</span>Memoria, no memorización</li>
-						<li><span class="mono-label">02</span>Menos texto, más imagen</li>
-						<li><span class="mono-label">03</span>Hecho por y para estudiantes</li>
+						<li><span class="about__no">01</span>Memoria, no memorización</li>
+						<li><span class="about__no">02</span>Menos texto, más imagen</li>
+						<li><span class="about__no">03</span>Hecho por y para estudiantes</li>
 					</ul>
 				</div>
 			</div>
@@ -438,7 +492,9 @@
 		<section class="section testimonial">
 			<div class="container">
 				<figure class="testimonial__card card reveal">
-					<img src="assets/crowny.png" width="1200" height="1125" alt="" aria-hidden="true" loading="lazy" class="ervi ervi--flip testimonial__ervi">
+					<span class="ervi-wrap ervi-wrap--greet ervi-wrap--from-left testimonial__ervi">
+						<img src="assets/crowny.png" width="1200" height="1125" alt="" aria-hidden="true" loading="lazy" class="ervi ervi--flip">
+					</span>
 					<img src="assets/illus/comillas.svg" alt="" aria-hidden="true" class="testimonial__quote-mark">
 					<blockquote class="testimonial__text">
 						Entiende, recuerda y aprueba.<br>Ese es el método Vimemory.
@@ -451,32 +507,34 @@
 			</div>
 		</section>
 
-		<section class="section contact" id="contacto">
-			<div class="container contact__inner reveal">
-				<div>
-					<p class="section-label">Contacto</p>
-					<h2 class="section-title">¿Tienes dudas? Escríbenos.</h2>
-					<p class="section-subtitle">
-						Cuéntanos qué necesitas y te respondemos por correo.
-					</p>
-					<a class="link contact__mail" href="mailto:hola@vimemory.com">hola@vimemory.com <span aria-hidden="true">→</span></a>
+		<section class="section section--room" id="contacto">
+			<div class="container">
+				<div class="room contact__inner reveal">
+					<div>
+						<p class="section-label">Contacto</p>
+						<h2 class="section-title">¿Tienes dudas? Escríbenos.</h2>
+						<p class="section-subtitle">
+							Cuéntanos qué necesitas y te respondemos por correo.
+						</p>
+						<a class="link contact__mail" href="mailto:hola@vimemory.com">hola@vimemory.com <span aria-hidden="true">→</span></a>
+					</div>
+					<form class="contact__form card" id="contact-form" novalidate>
+						<div class="field">
+							<label class="field__label" for="contact-name">Nombre</label>
+							<input class="field__input" id="contact-name" name="name" type="text" autocomplete="name" required>
+						</div>
+						<div class="field">
+							<label class="field__label" for="contact-email">Correo</label>
+							<input class="field__input" id="contact-email" name="email" type="email" autocomplete="email" required>
+						</div>
+						<div class="field">
+							<label class="field__label" for="contact-message">Mensaje</label>
+							<textarea class="field__textarea" id="contact-message" name="message" required></textarea>
+						</div>
+						<p class="field__error" id="contact-status" role="status" aria-live="polite"></p>
+						<button class="btn btn--primary" type="submit">Enviar mensaje</button>
+					</form>
 				</div>
-				<form class="contact__form card" id="contact-form" novalidate>
-					<div class="field">
-						<label class="field__label" for="contact-name">Nombre</label>
-						<input class="field__input" id="contact-name" name="name" type="text" autocomplete="name" required>
-					</div>
-					<div class="field">
-						<label class="field__label" for="contact-email">Correo</label>
-						<input class="field__input" id="contact-email" name="email" type="email" autocomplete="email" required>
-					</div>
-					<div class="field">
-						<label class="field__label" for="contact-message">Mensaje</label>
-						<textarea class="field__textarea" id="contact-message" name="message" required></textarea>
-					</div>
-					<p class="field__error" id="contact-status" role="status" aria-live="polite"></p>
-					<button class="btn btn--ghost" type="submit">Enviar mensaje</button>
-				</form>
 			</div>
 		</section>
 	</main>
@@ -507,7 +565,7 @@
 						<label class="visually-hidden" for="newsletter-email">Tu correo electrónico</label>
 						<input class="field__input" id="newsletter-email" name="email" type="email"
 							placeholder="Tu correo electrónico" autocomplete="email" required>
-						<button class="btn btn--ghost" type="submit">Suscribirme</button>
+						<button class="btn btn--secondary" type="submit">Suscribirme</button>
 					</form>
 					<p class="field__error" id="newsletter-status" role="status" aria-live="polite"></p>
 				</div>

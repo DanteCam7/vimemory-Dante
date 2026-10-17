@@ -1,21 +1,21 @@
 :root {
-	--canvas: #141312;
-	--surface: #1A1918;
-	--surface-raised: #201E1C;
-	--line: #2A2826;
-	--line-strong: #3D3A36;
+	--canvas: #FBFAF6;
+	--surface: #FFFFFF;
+	--surface-tint: #F5EFE6;
+	--line: #E3DCD0;
+	--line-strong: #CFC6B7;
 
-	--text: #F5EFE6;
-	--text-muted: #9A948C;
-	--cream-brand: #F5EFE6;
-	--on-cream: #141312;
+	--text: #1A1A1A;
+	--text-muted: #5C5C5C;
+	--on-ink: #FBFAF6;
 
 	--sage: #7DA99A;
+	--sage-text: #3F6E5F;
 	--dusty-blue: #9BBEC8;
 	--accent-brand: #E8391C;
 	--accent-dark: #CB3910;
-	--coral: #F2704F;
-	--star: #F0A030;
+	--accent-text: #B8340E;
+	--star: #A35F00;
 
 	--font-body: 'Poppins', system-ui, sans-serif;
 	--font-display: 'Instrument Serif', 'Times New Roman', serif;

@@ -24,7 +24,7 @@
 	font-size: 0.6rem;
 	letter-spacing: 0.2em;
 	text-transform: uppercase;
-	color: var(--coral);
+	color: var(--accent-text);
 	margin-top: 0.3rem;
 }
 
@@ -39,7 +39,7 @@
 	transition: color var(--ease-hover), background-color var(--ease-hover);
 }
 
-.navbar__links a:hover { color: var(--text); background: var(--surface); }
+.navbar__links a:hover { color: var(--text); background: var(--surface-tint); }
 
 .navbar__hamburger {
 	display: none;

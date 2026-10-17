@@ -1,0 +1,37 @@
+:root {
+	--canvas: #141312;
+	--surface: #1A1918;
+	--surface-raised: #201E1C;
+	--line: #2A2826;
+	--line-strong: #3D3A36;
+
+	--text: #F5EFE6;
+	--text-muted: #9A948C;
+	--cream-brand: #F5EFE6;
+	--on-cream: #141312;
+
+	--sage: #7DA99A;
+	--dusty-blue: #9BBEC8;
+	--accent-brand: #E8391C;
+	--accent-dark: #CB3910;
+	--coral: #F2704F;
+	--star: #F0A030;
+
+	--font-body: 'Poppins', system-ui, sans-serif;
+	--font-display: 'Instrument Serif', 'Times New Roman', serif;
+	--font-title: 'Inter', system-ui, sans-serif;
+	--font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+	--radius-card: 16px;
+	--radius-control: 6px;
+
+	--container: 1200px;
+	--gutter: 1.5rem;
+	--section-gap: 6rem;
+
+	--ease-hover: 150ms ease-out;
+}
+
+@media (max-width: 640px) {
+	:root { --gutter: 1rem; --section-gap: 4rem; }
+}
